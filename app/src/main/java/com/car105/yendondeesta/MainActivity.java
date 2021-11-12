@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void goToMap(View view){
+    public void goToMap(View view) {
         Intent intentMap = new Intent(this,MapsActivity.class);
         startActivity(intentMap);
     }

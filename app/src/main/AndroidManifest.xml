@@ -16,10 +16,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.YEnDondeEsta" >
+        android:theme="@style/Theme.YEnDondeEsta">
+        <activity
+            android:name=".dbActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -41,9 +44,7 @@
         <activity
             android:name=".MapsActivity"
             android:exported="true"
-            android:label="@string/title_activity_maps" >
-
-        </activity>
+            android:label="@string/title_activity_maps" />
     </application>
 
 </manifest>
