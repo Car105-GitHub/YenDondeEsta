@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">Y en Donde Esta .......</string>
     <string name="title_activity_maps">MapsActivity</string>
+
+    <string name="Codigo">Código</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Disponible">Disponible</string>
+
+    <string name="BtRegistrar">Registrar</string>
+    <string name="BtBuscar">Buscar</string>
+    <string name="BtModificar">Modificar</string>
+    <string name="BtEliminar">Eliminar</string>
+
 </resources>
