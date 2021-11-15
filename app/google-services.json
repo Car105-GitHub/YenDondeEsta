@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "183629048380",
+    "project_id": "y-en-donde-esta",
+    "storage_bucket": "y-en-donde-esta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183629048380:android:591f786ff86ed36be53139",
+        "android_client_info": {
+          "package_name": "com.car105.yendondeesta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "183629048380-mt56floce7tnma5tdtli5k92lm1o62rl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAa68ci4F9W13jAjUu77tKv7ElULLk0GJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "183629048380-mt56floce7tnma5tdtli5k92lm1o62rl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
