@@ -7,85 +7,62 @@
     android:background="#793F51B5"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="345dp"
-        android:layout_height="54dp"
-        android:background="@drawable/button_rounded"
-        android:text="REGISTRAR"
-        app:backgroundTint="#009688"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="418dp" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="32dp"
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        tools:layout_editor_absoluteY="250dp" />
 
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:ems="10"
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="413dp"
+        android:layout_height="216dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="345dp"
+        android:layout_height="54dp"
+        android:background="@drawable/button_rounded"
+        android:text="@string/registro"
+        app:backgroundTint="#009688"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="518dp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="345dp"
         android:layout_height="54dp"
         android:background="@drawable/button_rounded"
-        android:text="ENTRAR"
+        android:text="@string/entrar"
         app:backgroundTint="#009688"
         tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="339dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="32dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.293"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:srcCompat="@drawable/img" />
-
-    <ImageButton
-        android:id="@+id/imageButton7"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="62dp"
-        android:layout_marginTop="32dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintStart_toEndOf="@+id/imageButton4"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:srcCompat="@drawable/img_1" />
+        tools:layout_editor_absoluteY="439dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
