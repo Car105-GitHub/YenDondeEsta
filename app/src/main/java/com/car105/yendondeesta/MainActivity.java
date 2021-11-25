@@ -6,10 +6,10 @@ import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.view.View;
 
-import android.content.Context;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,12 +27,23 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToMap(View view) {
-        Intent intentMap = new Intent(this,MapsActivity.class);
+        Intent intentMap = new Intent(this, MapsActivity.class);
         startActivity(intentMap);
     }
 
     public void goToDB(View view) {
-        Intent intentDB = new Intent(this,dbActivity.class);
+        Intent intentDB = new Intent(this, dbActivity.class);
         startActivity(intentDB);
     }
+
+
+    public void goToFireDB(View view) {
+        Intent intentDBFire = new Intent(this, FireBaseActivity.class);
+        startActivity(intentDBFire);
+
+
+    }
+
+    ;
+
 }
