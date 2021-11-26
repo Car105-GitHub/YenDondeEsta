@@ -75,7 +75,6 @@ public class FireBaseActivity extends AppCompatActivity {
     private void inicilizarFirebase() {
         FirebaseApp.initializeApp(this);
         firebaseDatabase = FirebaseDatabase.getInstance();
-        //firebaseDatabase.setPersistenceEnabled(true);
         databaseReference = firebaseDatabase.getReference();
     }
 
