@@ -144,6 +144,9 @@ public class FireBaseActivity extends AppCompatActivity {
                     validacion();
                 }
                 else {
+                    Persona p = new Persona();
+                    p.setId(personaSelected.getId());
+                    databaseReference.child("Persona").child(p.getId()).removeValue();
                     Toast.makeText(this,"Eliminado Exitosamente",Toast.LENGTH_LONG).show();
                     limpiarCajas();
                     break;
