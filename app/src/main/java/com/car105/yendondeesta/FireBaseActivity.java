@@ -7,6 +7,8 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -36,6 +38,8 @@ public class FireBaseActivity extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
 
+    Persona personaSelected;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +51,17 @@ public class FireBaseActivity extends AppCompatActivity {
         listV_personas = findViewById(R.id.lv_datosPersonas);
         inicilizarFirebase();
         listarDatos();
+
+        listV_personas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                personaSelected = (Persona) parent.getItemAtPosition(position);
+                nomP.setText(personaSelected.getNombre());
+                celP.setText(personaSelected.getCelular());
+            }
+        });
+
+
     }
 
     private void listarDatos() {
@@ -112,7 +127,12 @@ public class FireBaseActivity extends AppCompatActivity {
                     validacion();
                 }
                 else {
-                Toast.makeText(this,"Actualizado Exitosamente",Toast.LENGTH_LONG).show();
+                    Persona p = new Persona();
+                    p.setId(personaSelected.getId());
+                    p.setNombre(nomP.getText().toString().trim());
+                    p.setCelular(celP.getText().toString().trim());
+                    databaseReference.child("Persona").child(p.getId()).setValue(p);
+                    Toast.makeText(this,"Actualizado Exitosamente",Toast.LENGTH_LONG).show();
                     limpiarCajas();
                     break;
                 }
